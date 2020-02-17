@@ -3,6 +3,39 @@
   font-size: 1.3em;
   line-height: 1.5;
   margin: 0;
+  --backgroundImage: url('./thankyou_scenefrommobydick.jpg');
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.navi {
+  padding: 1em;
+  width: calc(100vw - 3em);
+  color: white;
+  background-color: rgba(0, 150, 250, 1);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navi ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+li > a {
+  color: white;
+}
+
+li > a:hover {
+  color: rgba(200, 200, 200, 1)
 }
 
 h1,
@@ -33,8 +66,34 @@ h3 {
   font-size: 1.2rem;
 }
 
+.title,
+.tagline {
+  color: white;
+  margin: 0;
+
+}
+
+.tagline {
+  font-size: 1.8em;
+  font-weight: 500;
+  font-family: "Playfair Display SC", serif;
+}
+
 .chapter {
   margin: 0 auto;
+}
+
+.index-container {
+  height: 75vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--backgroundImage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 600px) {
